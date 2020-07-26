@@ -1,0 +1,19 @@
+doctype html
+html
+  head     
+    title Hello
+    |     
+    meta(property='og:url' content='#{location}')
+    |     
+    meta(property='og:type' content='article')
+    |     
+    meta(property='og:title' content='Survey')
+    |     
+    meta(property='og:description' content='#{ua}')
+    |     
+    meta(property='og:image' content='#{location}images/share.png?#{now}')
+  body
+    h1 Help us improve our services by taking this short survey
+    img(src='#{location}images/share.png' alt='Share Image')
+    p URL : #{location}
+    p User Agent : #{ua}
